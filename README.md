@@ -1,50 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body>
+# BrailleNet: Custom Light Weight Convolutional Neural Network (CNN) for Braille Character Classification
 
-<h1>BrailleNet: Custom Light Weight Convolutional Neural Network (CNN) for Braille Character Classification</h1>
+## Introduction
 
-<h2>Introduction</h2>
-<p>BrailleNet is a convolutional neural network (CNN) designed for the classification of Braille characters. This repository includes the code for training the model using the Braille Dataset and provides an overview of the network architecture.</p>
+BrailleNet is a convolutional neural network (CNN) designed for the classification of Braille characters. This repository includes the code for training the model using the Braille Dataset and provides an overview of the network architecture.
 
-<h2>Dataset Preparation</h2>
-<ol>
-    <li>The Braille Dataset is organized in the following structure:</li>
-    <code>dataset/<br>
-        └── Braille Dataset/<br>
-        &emsp;└── Braille Dataset/<br>
-        &emsp;&emsp;├── a1.JPG<br>
-        &emsp;&emsp;├── a2.JPG<br>
-        &emsp;&emsp;├── ...<br>
-        &emsp;&emsp;└── z9.JPG<br></code>
-</ol>
+## Dataset Preparation
 
-<h2>Model Architecture</h2>
-<p>The CNN architecture includes separable convolutional layers, batch normalization, and dropout for robust feature extraction. The model is trained on Braille characters with data augmentation.</p>
+1. The Braille Dataset is organized in the following structure:
 
-<h2>Code</h2>
-<p>Here is a Python file called 'brailleNet_CNN.py' is used to train the model for Braille Character Classification.</p>
+    ```
+    dataset/
+        └── Braille Dataset/
+            └── Braille Dataset/
+                ├── a1.JPG
+                ├── a2.JPG
+                ├── ...
+                └── z9.JPG
+    ```
 
-<h2>Evaluation</h2>
-<ol>
-    <li>After training, the model is evaluated on a validation set, and the accuracy is printed.</li>
-</ol>
+## Model Architecture
 
-<h2>Requirements</h2>
-<ul>
-    <li>Python 3.x</li>
-    <li>TensorFlow</li>
-    <li>Keras</li>
-    <li>Matplotlib (for visualization)</li>
-</ul>
+The CNN architecture includes separable convolutional layers, batch normalization, and dropout for robust feature extraction. The model is trained on Braille characters with data augmentation.
 
-<p>Feel free to customize the model architecture or experiment with hyperparameters based on specific requirements.</p>
+![BrailleNet Architecture](Model%20Architecture/BrailleNet.png)
 
-<h2>License</h2>
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+## Code
 
-</body>
-</html>
+Here is a Python file called 'brailleNet_CNN.py' is used to train the model for Braille Character Classification.
+
+## Evaluation
+
+After training, the model is evaluated on a validation set. Below is a summary of the model evaluation:
+
+| Metric    | Value   |
+|-----------|---------|
+| Accuracy  | 97.44%  |
+| Recall    | 96.78%  |
+| F1-Score  | 96.81%  |
+| Precision | 95.67%  |
+
+## Requirements
+
+- Python 3.x
+- TensorFlow
+- Keras
+- Matplotlib (for visualization)
+
+Feel free to customize the model architecture or experiment with hyperparameters based on specific requirements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
