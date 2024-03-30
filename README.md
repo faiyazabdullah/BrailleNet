@@ -4,7 +4,7 @@
 
 BrailleNet is a convolutional neural network (CNN) designed for the classification of Braille characters. This repository includes the code for training the model using the Braille Dataset and provides an overview of the network architecture.
 
-## Dataset Preparation
+## Dataset
 
 1. The Braille Dataset is organized in the following structure:
 
@@ -17,6 +17,8 @@ BrailleNet is a convolutional neural network (CNN) designed for the classificati
                 ├── ...
                 └── z9.JPG
     ```
+
+For more details or to explore the dataset, visit the [Braille Character Dataset on Kaggle](https://www.kaggle.com/datasets/shanks0465/braille-character-dataset).
 
 ## Model Architecture
 
