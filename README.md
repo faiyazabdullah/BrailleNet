@@ -24,7 +24,7 @@ For more details or to explore the dataset, visit the [Braille Character Dataset
 
 The CNN architecture includes separable convolutional layers, batch normalization, and dropout for robust feature extraction. The model is trained on Braille characters with data augmentation.
 
-![BrailleNet Architecture](Model%20Architecture/BrailleNet.png)
+![BrailleNet Architecture](assets/BrailleNet.png)
 
 ## Code
 
